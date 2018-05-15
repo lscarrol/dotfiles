@@ -1,0 +1,576 @@
+GNU DDD 3.3.12 (x86_64-unknown-linux-gnu)
+Copyright (C) 1995-1999 Technische Universität Braunschweig, Germany.
+Copyright (C) 1999-2001 Universität Passau, Germany.
+Copyright (C) 2001 Universität des Saarlandes, Germany.
+Copyright (C) 2001-2009 Free Software Foundation, Inc.
+
+Compiled with GCC 7.3.1 20180406, GNU libc 2.27
+Requires X11R6, Xt11R6, Motif 2.3.8 (Motif Version 2.3.8)
+Includes XPM 3.4.11, Athena Panner (7000002L), DDD core
+Built 2018-05-10 by Liam Carroll <oswald@127.0.1.1>.
+$  ddd ./a.out
++  /bin/sh -c 'exec gdb -q -fullname '\''./a.out'\'''
+#  Hello, world!
+#  Starting GDB...
+#  Running GDB (pid 8794, tty /dev/pts/4)...
+#  Current language: C/C++
+#  Searching "vsllib/ddd.vsl"...
+#  Trying "/home/oswald/.ddd/vsllib/ddd.vsl"
+#  Trying "/usr/local/share/ddd-3.3.12/vsllib/ddd.vsl"
+#  Searching "vsllib/ddd.vsl"..."/usr/local/share/ddd-3.3.12/vsllib/ddd.vsl".
+#  Another DDD is running (pid 14488)
+2018.05.13 03:17:53
+<- "Reading symbols from ./a.out..."
+2018.05.13 03:17:53
+<- "done.\n"
+2018.05.13 03:17:53
+<- "(gdb) "
+2018.05.13 03:17:53
+-> "set prompt (gdb) \n"
+2018.05.13 03:17:53
+<- "(gdb) "
+2018.05.13 03:17:53
+-> "set height 0\n"
+2018.05.13 03:17:53
+<- "(gdb) "
+2018.05.13 03:17:53
+-> "set width 0\n"
+2018.05.13 03:17:53
+<- "(gdb) "
+2018.05.13 03:17:53
+-> "set annotate 1\n"
+2018.05.13 03:17:53
+<- "(gdb) "
+2018.05.13 03:17:53
+-> " set verbose off\n"
+2018.05.13 03:17:53
+<- "(gdb) "
+2018.05.13 03:17:53
+-> "info line\n"
+2018.05.13 03:17:53
+<- "No line number information available.\n"
+   "(gdb) "
+2018.05.13 03:17:53
+-> "list\n"
+2018.05.13 03:17:53
+<- "270\t    char* typ2 = getType(headT, begin->right);\n"
+   "271\t    if (strcmp(typ1, \"real2int\") == 0) {typ1 = \"integer\";}\n"
+2018.05.13 03:17:53
+<- "272\t    if (strcmp(typ2, \"real2int\") == 0) {typ2 = \"integer\";}\n"
+   "273\t    if (strcmp(typ1, \"int2real\") == 0) {typ1 = \"real\";}\n"
+   "274\t    if (strcmp(typ2, \"int2real\") == 0) {typ2 = \"real\";}\n"
+   "275\t\n"
+   "276\t    //printf(\"%s  %s %d\\n"
+   "\", typ1, typ2, begin->line);\n"
+   "277\t    if (strcmp(typ1, typ2) != 0) {\n"
+2018.05.13 03:17:53
+<- "278\t      printf(\"Type mismatch: %s == %s  |  Line: %d\\n"
+   "\", typ1, typ2, begin->line);\n"
+   "279\t    }\n"
+   "(gdb) "
+2018.05.13 03:17:53
+-> "info line\n"
+2018.05.13 03:17:53
+<- "Line 279 of \"parser.y\" is at address 0x568f <typeCheck+279> but contains no code.\n"
+   "\032\032/home/oswald/cse443-mr.jackson/src/parser.y:279:12356:beg:0x568f\n"
+   "(gdb) "
+2018.05.13 03:17:53
+-> "output 4711\n"
+2018.05.13 03:17:53
+<- "4711(gdb) "
+2018.05.13 03:17:53
+-> "show language\n"
+2018.05.13 03:17:53
+<- "The current source language is \"auto; currently c\".\n"
+   "(gdb) "
+2018.05.13 03:17:53
+-> "show version\n"
+2018.05.13 03:17:53
+<- "GNU gdb (GDB) 8.1\n"
+   "Copyright (C) 2018 Free Software Foundation, Inc.\n"
+   "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
+   "This is free software: you are free to change and redistribute it.\n"
+   "There is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\n"
+   "and \"show warranty\" for details.\n"
+   "This GDB was configured as \"x86_64-pc-linux-gnu\".\n"
+   "Type \"show configuration\" for configuration details.\n"
+   "For bug reporting instructions, please see:\n"
+   "<http://www.gnu.org/software/gdb/bugs/>.\n"
+   "Find the GDB manual and other documentation resources online at:\n"
+   "<http://www.gnu.org/software/gdb/documentation/>.\n"
+   "For help, type \"help\".\n"
+   "Type \"apropos word\" to search for commands related to \"word\".\n"
+2018.05.13 03:17:53
+<- "(gdb) "
+2018.05.13 03:17:53
+-> "pwd\n"
+2018.05.13 03:17:53
+<- "Working directory /home/oswald/cse443-mr.jackson/src.\n"
+   "(gdb) "
+2018.05.13 03:17:53
+-> "info breakpoints\n"
+2018.05.13 03:17:53
+<- "No breakpoints or watchpoints.\n"
+   "(gdb) "
+2018.05.13 03:17:53
+-> "show history filename\n"
+2018.05.13 03:17:53
+<- "The filename in which to record the command history is \"/home/oswald/cse443-mr.jackson/src/.gdb_history\".\n"
+   "(gdb) "
+2018.05.13 03:17:53
+-> "show history size\n"
+2018.05.13 03:17:53
+<- "The size of the command history is 256.\n"
+   "(gdb) "
+#  Reading file "/home/oswald/cse443-mr.jackson/src/parser.y"...
+#  Reading file "/home/oswald/cse443-mr.jackson/src/parser.y"...done.
+#  File "/home/oswald/cse443-mr.jackson/src/parser.y" 449 lines, 17522 characters
+#  Setting buttons...
+#  Setting buttons...done.
+2018.05.13 03:17:54
+-> "set confirm off\n"
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:54
+-> "source /tmp/dddYlbL2U\n"
+#  Disassembling location 0x568f to 0x578f...
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:54
+-> "info breakpoints\n"
+2018.05.13 03:17:54
+<- "No breakpoints or watchpoints.\n"
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:54
+-> "disassemble 0x568f 0x578f\n"
+2018.05.13 03:17:54
+<- "A syntax error in expression, near `0x578f\'.\n"
+   "(gdb) "
+#  Disassembling location 0x568f to 0x578f...done.
+2018.05.13 03:17:54
+-> "info source\n"
+2018.05.13 03:17:54
+<- "Current source file is parser.y\n"
+   "Compilation directory is /home/oswald/cse443-mr.jackson/src\n"
+   "Located in /home/oswald/cse443-mr.jackson/src/parser.y\n"
+   "Contains 449 lines.\n"
+   "Source language is c.\n"
+   "Producer is GNU C11 7.3.1 20180406 -mtune=generic -march=x86-64 -g.\n"
+   "Compiled with DWARF 2 debugging format.\n"
+   "Does not include preprocessor macro info.\n"
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:54
+-> "# reset\n"
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:54
+-> "info breakpoints\n"
+2018.05.13 03:17:54
+<- "No breakpoints or watchpoints.\n"
+   "(gdb) "
+2018.05.13 03:17:54
+-> "display\n"
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:54
+-> "info display\n"
+2018.05.13 03:17:54
+<- "There are no auto-display expressions now.\n"
+   "(gdb) "
+2018.05.13 03:17:54
+-> "set environment TERM dumb\n"
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:54
+-> "info files\n"
+2018.05.13 03:17:54
+<- "Symbols from \"/home/oswald/cse443-mr.jackson/src/a.out\".\n"
+   "Local exec file:\n"
+   "\t`/home/oswald/cse443-mr.jackson/src/a.out\', file type elf64-x86-64.\n"
+   "\tEntry point: 0x1b40\n"
+   "\t0x0000000000000238 - 0x0000000000000254 is .interp\n"
+   "\t0x0000000000000254 - 0x0000000000000274 is .note.ABI-tag\n"
+   "\t0x0000000000000274 - 0x0000000000000298 is .note.gnu.build-id\n"
+   "\t0x0000000000000298 - 0x00000000000002c8 is .gnu.hash\n"
+   "\t0x00000000000002c8 - 0x0000000000000688 is .dynsym\n"
+   "\t0x0000000000000688 - 0x0000000000000809 is .dynstr\n"
+   "\t0x000000000000080a - 0x000000000000085a is .gnu.version\n"
+   "\t0x0000000000000860 - 0x00000000000008a0 is .gnu.version_r\n"
+   "\t0x00000000000008a0 - 0x0000000000001638 is .rela.dyn\n"
+   "\t0x0000000000001638 - 0x0000000000001920 is .rela.plt\n"
+   "\t0x0000000000001920 - 0x0000000000001937 is .init\n"
+   "\t0x0000000000001940 - 0x0000000000001b40 is .plt\n"
+   "\t0x0000000000001b40 - 0x0000000000008732 is .text\n"
+   "\t0x0000000000008734 - 0x000000000000873d is .fini\n"
+   "\t0x0000000000008740 - 0x000000000000ab4b is .rodata\n"
+   "\t0x000000000000ab4c - 0x000000000000ae10 is .eh_frame_hdr\n"
+   "\t0x000000000000ae10 - 0x000000000000b948 is .eh_frame\n"
+   "\t0x000000000020ba30 - 0x000000000020ba38 is .init_array\n"
+   "\t0x000000000020ba38 - 0x000000000020ba40 is .fini_array\n"
+   "\t0x000000000020ba40 - 0x000000000020bdf8 is .data.rel.ro\n"
+   "\t0x000000000020bdf8 - 0x000000000020bfd8 is .dynamic\n"
+   "\t0x000000000020bfd8 - 0x000000000020c000 is .got\n"
+   "\t0x000000000020c000 - 0x000000000020c110 is .got.plt\n"
+   "\t0x000000000020c120 - 0x000000000020c210 is .data\n"
+   "\t0x000000000020c220 - 0x0000000000212100 is .bss\n"
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:54
+-> "info program\n"
+2018.05.13 03:17:54
+<- "The program being debugged is not being run.\n"
+   "(gdb) "
+#  Starting GDB...done.
+#  Welcome to DDD 3.3.12 "Dale Head" (x86_64-unknown-linux-gnu)
+2018.05.13 03:17:54
+-> "help run\n"
+2018.05.13 03:17:54
+<- "Start debugged program.\n"
+   "You may specify arguments to give it.\n"
+   "Args may include \"*\", or \"[...]\"; they are expanded using the\n"
+   "shell that will start the program (specified by the \"$SHELL\" environment\n"
+   "variable).  Input and output redirection with \">\", \"<\", or \">>\"\n"
+   "are also allowed.\n"
+   "\n"
+   "With no arguments, uses arguments last specified (with \"run\" or \n"
+   "\"set args\").  To cancel previous arguments and run with no arguments,\n"
+   "use \"set args\" without arguments.\n"
+   "\n"
+   "To start the inferior without using a shell, use \"set startup-with-shell off\".\n"
+2018.05.13 03:17:54
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help detach\n"
+2018.05.13 03:17:55
+<- "Detach a process or file previously attached.\n"
+   "If a process, it is no longer traced, and it continues its execution.  If\n"
+   "you were debugging a file, the file is closed and gdb no longer accesses it.\n"
+   "\n"
+   "List of detach subcommands:\n"
+   "\n"
+   "detach checkpoint -- Detach from a checkpoint (experimental)\n"
+   "detach inferiors -- Detach from inferior ID (or list of IDS)\n"
+   "\n"
+   "Type \"help detach\" followed by detach subcommand name for full documentation.\n"
+   "Type \"apropos word\" to search for commands related to \"word\".\n"
+   "Command name abbreviations are allowed if unambiguous.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help step\n"
+2018.05.13 03:17:55
+<- "Step program until it reaches a different source line.\n"
+   "Usage: step [N]\n"
+   "Argument N means step N times (or till program stops for another reason).\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help stepi\n"
+2018.05.13 03:17:55
+<- "Step one instruction exactly.\n"
+   "Usage: stepi [N]\n"
+   "Argument N means step N times (or till program stops for another reason).\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help next\n"
+2018.05.13 03:17:55
+<- "Step program, proceeding through subroutine calls.\n"
+   "Usage: next [N]\n"
+   "Unlike \"step\", if the current source line calls a subroutine,\n"
+   "this command does not enter the subroutine, but instead steps over\n"
+   "the call, in effect treating it as a single source line.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help nexti\n"
+2018.05.13 03:17:55
+<- "Step one instruction, but proceed through subroutine calls.\n"
+   "Usage: nexti [N]\n"
+   "Argument N means step N times (or till program stops for another reason).\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help until\n"
+2018.05.13 03:17:55
+<- "Execute until the program reaches a source line greater than the current\n"
+   "or a specified location (same args as break command) within the current frame.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help finish\n"
+2018.05.13 03:17:55
+<- "Execute until selected stack frame returns.\n"
+   "Usage: finish\n"
+   "Upon return, the value returned is printed and put in the value history.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help cont\n"
+2018.05.13 03:17:55
+<- "Continue program being debugged, after signal or breakpoint.\n"
+   "Usage: continue [N]\n"
+   "If proceeding from breakpoint, a number N may be used as an argument,\n"
+   "which means to set the ignore count of that breakpoint to N - 1 (so that\n"
+   "the breakpoint won\'t break until the Nth time it is reached).\n"
+   "\n"
+   "If non-stop mode is enabled, continue only the current thread,\n"
+   "otherwise all the threads in the program are continued.  To \n"
+   "continue all stopped threads in non-stop mode, use the -a option.\n"
+   "Specifying -a and an ignore count simultaneously is an error.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help signal\n"
+2018.05.13 03:17:55
+<- "Continue program with the specified signal.\n"
+   "Usage: signal SIGNAL\n"
+   "The SIGNAL argument is processed the same as the handle command.\n"
+   "\n"
+   "An argument of \"0\" means continue the program without sending it a signal.\n"
+   "This is useful in cases where the program stopped because of a signal,\n"
+   "and you want to resume the program while discarding the signal.\n"
+   "\n"
+   "In a multi-threaded program the signal is delivered to, or discarded from,\n"
+   "the current thread only.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help kill\n"
+2018.05.13 03:17:55
+<- "Kill execution of program being debugged.\n"
+   "\n"
+   "List of kill subcommands:\n"
+   "\n"
+   "kill inferiors -- Kill inferior ID (or list of IDs)\n"
+   "\n"
+   "Type \"help kill\" followed by kill subcommand name for full documentation.\n"
+   "Type \"apropos word\" to search for commands related to \"word\".\n"
+   "Command name abbreviations are allowed if unambiguous.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help up\n"
+2018.05.13 03:17:55
+<- "Select and print stack frame that called this one.\n"
+   "An argument says how many frames up to go.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:55
+-> "help down\n"
+2018.05.13 03:17:55
+<- "Select and print stack frame called by this one.\n"
+   "An argument says how many frames down to go.\n"
+2018.05.13 03:17:55
+<- "(gdb) "
+2018.05.13 03:17:59
+-> "output linenumber\n"
+2018.05.13 03:17:59
+<- "No symbol \"linenumber\" in current context.\n"
+2018.05.13 03:17:59
+<- "(gdb) "
+2018.05.13 03:17:59
+-> "output fclose\n"
+2018.05.13 03:17:59
+<- "{<text variable, no debug info>} 0x19c0 <fclose@plt>"
+2018.05.13 03:17:59
+<- "(gdb) "
+2018.05.13 03:18:00
+-> "output Valid\n"
+2018.05.13 03:18:00
+<- "No symbol \"Valid\" in current context.\n"
+2018.05.13 03:18:00
+<- "(gdb) "
+2018.05.13 03:18:01
+-> "output printf\n"
+2018.05.13 03:18:01
+<- "{<text variable, no debug info>} 0x19f0 <printf@plt>"
+2018.05.13 03:18:01
+<- "(gdb) "
+2018.05.13 03:18:01
+-> "output fseek\n"
+2018.05.13 03:18:01
+<- "{<text variable, no debug info>} 0x1ae0 <fseek@plt>"
+2018.05.13 03:18:01
+<- "(gdb) "
+2018.05.13 03:18:04
+-> "break parser.y:426\n"
+2018.05.13 03:18:04
+<- "Breakpoint 1 at 0x6039: file parser.y, line 426.\n"
+   "(gdb) "
+2018.05.13 03:18:04
+-> "info breakpoints\n"
+2018.05.13 03:18:04
+<- "Num     Type           Disp Enb Address            What\n"
+2018.05.13 03:18:04
+<- "1       breakpoint     keep y   0x0000000000006039 in main at parser.y:426\n"
+   "(gdb) "
+2018.05.13 03:18:09
+-> "complete run -ir in\n"
+2018.05.13 03:18:09
+<- "run -ir input.txt\n"
+   "(gdb) "
+#  Starting execution window...
++  /bin/sh -c 'tmp=${TMPDIR-/tmp}/ddd$$; export tmp; trap "rm -f $tmp" 0; trap '\''exit 1'\'' 1 2 15; xterm -bg '\''grey96'\'' -fg '\''black'\'' -cr '\''DarkGreen'\'' -fn '\''-*-lucidatypewriter-medium-r-*-*-*-120-*-*-*-*-iso8859-*'\'' -title '\''DDD: Execution Window'\'' -e /bin/sh -c '\''echo `tty` $$ $TERM $WINDOWID >$tmp; trap "" 2; while true; do sleep 3600; done'\'' >/dev/null </dev/null 2>&1 & while test ! -s $tmp; do sleep 1; done; cat $tmp'
+#  Starting execution window...done.
+#  Initializing execution window...
+#  Initializing execution window...done.
+2018.05.13 03:18:10
+-> "set environment TERM xterm\n"
+2018.05.13 03:18:10
+<- "(gdb) "
+2018.05.13 03:18:10
+-> "run < /dev/pts/5 > /dev/pts/5 2>&1 -ir input.txt \n"
+2018.05.13 03:18:10
+<- "Starting program: /home/oswald/cse443-mr.jackson/src/a.out < /dev/pts/5 > /dev/pts/5 2>&1 -ir input.txt\n"
+2018.05.13 03:18:10
+<- "\n"
+   "Program received signal SIGSEGV, Segmentation fault.\n"
+2018.05.13 03:18:10
+<- "0x0000555555556e21 in findEmptyNode (node=0x0) at DAG.c:76\n"
+2018.05.13 03:18:10
+<- "\032\032/home/oswald/cse443-mr.jackson/src/DAG.c:76:1537:beg:0x555555556e21\n"
+2018.05.13 03:18:10
+<- "(gdb) "
+2018.05.13 03:18:10
+-> "info breakpoints\n"
+2018.05.13 03:18:10
+<- "Num     Type           Disp Enb Address            What\n"
+   "1       breakpoint     keep y   0x000055555555a039 in main at parser.y:426\n"
+2018.05.13 03:18:10
+<- "(gdb) "
+#  Reading file "/home/oswald/cse443-mr.jackson/src/DAG.c"...
+#  Reading file "/home/oswald/cse443-mr.jackson/src/DAG.c"...done.
+#  File "/home/oswald/cse443-mr.jackson/src/DAG.c" 119 lines, 2458 characters
+2018.05.13 03:18:10
+-> "x /i 0x555555556e21\n"
+2018.05.13 03:18:10
+<- "=> 0x555555556e21 <findEmptyNode+16>:\tmov    0x10(%rax),%eax\n"
+2018.05.13 03:18:10
+<- "(gdb) "
+2018.05.13 03:18:10
+-> "x /i 0x555555556f11\n"
+2018.05.13 03:18:10
+<- "   0x555555556f11 <createTree+37>:\tmov    %rax,%rdi\n"
+2018.05.13 03:18:10
+<- "(gdb) "
+#  Disassembling location 0x555555556e21...
+2018.05.13 03:18:10
+-> "disassemble 0x555555556e21\n"
+2018.05.13 03:18:10
+<- "Dump of assembler code for function findEmptyNode:\n"
+   "   0x0000555555556e11 <+0>:\tpush   %rbp\n"
+   "   0x0000555555556e12 <+1>:\tmov    %rsp,%rbp\n"
+   "   0x0000555555556e15 <+4>:\tsub    $0x10,%rsp\n"
+   "   0x0000555555556e19 <+8>:\tmov    %rdi,-0x8(%rbp)\n"
+   "   0x0000555555556e1d <+12>:\tmov    -0x8(%rbp),%rax\n"
+   "=> 0x0000555555556e21 <+16>:\tmov    0x10(%rax),%eax\n"
+   "   0x0000555555556e24 <+19>:\tcmp    $0x1,%eax\n"
+   "   0x0000555555556e27 <+22>:\tjg     0x555555556e2f <findEmptyNode+30>\n"
+   "   0x0000555555556e29 <+24>:\tmov    -0x8(%rbp),%rax\n"
+   "   0x0000555555556e2d <+28>:\tjmp    0x555555556e3f <findEmptyNode+46>\n"
+   "   0x0000555555556e2f <+30>:\tmov    -0x8(%rbp),%rax\n"
+   "   0x0000555555556e33 <+34>:\tmov    0x28(%rax),%rax\n"
+   "   0x0000555555556e37 <+38>:\tmov    %rax,%rdi\n"
+   "   0x0000555555556e3a <+41>:\tcallq  0x555555556e11 <findEmptyNode>\n"
+   "   0x0000555555556e3f <+46>:\tleaveq \n"
+   "   0x0000555555556e40 <+47>:\tretq   \n"
+   "End of assembler dump.\n"
+   "(gdb) "
+#  Disassembling location 0x555555556e21...done.
+2018.05.13 03:18:10
+-> "info source\n"
+2018.05.13 03:18:10
+<- "Current source file is DAG.c\n"
+   "Compilation directory is /home/oswald/cse443-mr.jackson/src\n"
+   "Located in /home/oswald/cse443-mr.jackson/src/DAG.c\n"
+   "Contains 119 lines.\n"
+   "Source language is c.\n"
+   "Producer is GNU C11 7.3.1 20180406 -mtune=generic -march=x86-64 -g.\n"
+   "Compiled with DWARF 2 debugging format.\n"
+   "Does not include preprocessor macro info.\n"
+2018.05.13 03:18:10
+<- "(gdb) "
+2018.05.13 03:18:16
+-> "output findEmptyNode\n"
+2018.05.13 03:18:16
+<- "{D_NODE *(D_NODE *)} 0x555555556e11 <findEmptyNode>"
+2018.05.13 03:18:16
+<- "(gdb) "
+2018.05.13 03:18:19
+-> "output ret\n"
+2018.05.13 03:18:19
+<- "No symbol \"ret\" in current context.\n"
+2018.05.13 03:18:19
+<- "(gdb) "
+2018.05.13 03:18:20
+-> "output return\n"
+2018.05.13 03:18:20
+<- "No symbol \"return\" in current context.\n"
+2018.05.13 03:18:20
+<- "(gdb) "
+2018.05.13 03:18:20
+-> "output node\n"
+2018.05.13 03:18:20
+<- "(D_NODE *) 0x0"
+2018.05.13 03:18:20
+<- "(gdb) "
+2018.05.13 03:18:21
+-> "frame\n"
+2018.05.13 03:18:21
+<- "#0  0x0000555555556e21 in findEmptyNode (node=0x0) at DAG.c:76\n"
+   "\032\032/home/oswald/cse443-mr.jackson/src/DAG.c:76:1537:beg:0x555555556e21\n"
+2018.05.13 03:18:21
+<- "(gdb) "
+2018.05.13 03:18:21
+-> "display node\n"
+2018.05.13 03:18:21
+<- "1: node = (D_NODE *) 0x0\n"
+2018.05.13 03:18:21
+<- "(gdb) "
+#  Creating display...
+#  Creating display...done.
+2018.05.13 03:18:21
+-> "output &node\n"
+#  Display 1: node (enabled, scope findEmptyNode)
+2018.05.13 03:18:21
+<- "(D_NODE **) 0x7fffffffd978(gdb) "
+#  Display 1: node (enabled, scope findEmptyNode, address 0x7fffffffd978)
+2018.05.13 03:18:27
+-> "frame\n"
+2018.05.13 03:18:27
+<- "#0  0x0000555555556e21 in findEmptyNode (node=0x0) at DAG.c:76\n"
+   "\032\032/home/oswald/cse443-mr.jackson/src/DAG.c:76:1537:beg:0x555555556e21\n"
+   "(gdb) "
+2018.05.13 03:18:27
+-> "display node\n"
+2018.05.13 03:18:27
+<- "2: node = (D_NODE *) 0x0\n"
+2018.05.13 03:18:27
+<- "(gdb) "
+#  Creating display...
+#  Creating display...done.
+2018.05.13 03:18:27
+-> "output &node\n"
+#  Display 2: node (enabled, scope findEmptyNode)
+2018.05.13 03:18:27
+<- "(D_NODE **) 0x7fffffffd978(gdb) "
+#  Display 2: node (enabled, scope findEmptyNode, address 0x7fffffffd978)
+2018.05.13 03:18:33
+-> "output node->chil\n"
+2018.05.13 03:18:33
+<- "Cannot access memory at address 0x10\n"
+2018.05.13 03:18:33
+<- "(gdb) "
+2018.05.13 03:18:35
+-> "quit\n"
+#  Running GDB (pid 8794, tty /dev/pts/4)...Exit 0.
+#  Saving options in "/home/oswald/.ddd/init"...
+#  Saving options in "/home/oswald/.ddd/init"...done.
+#  Closing execution window...
+#  Closing execution window...done.
+#  Saving history in "/home/oswald/.ddd/history"...
+#  Saving history in "/home/oswald/.ddd/history"...done.
+#  Thanks for using DDD 3.3.12!

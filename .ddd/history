@@ -1,0 +1,257 @@
+file /home/oswald/cse443-mr.jackson/src/a.out
+run input.txt 
+delete 1
+run input.txt 
+graph display *stack dependent on 1
+graph display *(stack->top) dependent on 17
+graph plot *(stack->top)
+quit
+run input.txt 
+run input.txt
+quit
+run input.txt 
+quit
+run input.txt 
+quit
+run input.txt 
+quit
+run input.txt 
+quit
+run input.txt 
+graph display main
+break stack.c:99
+delete 1
+graph display ops
+graph display ops->top
+graph display curr
+graph display curr->data
+graph display ops
+graph display ops->top
+graph display *(ops->top) dependent on 7
+graph display *ops dependent on 6
+quit
+run input.txt 
+graph display ops
+graph display ops->top
+graph display ops->top->data
+list isOp
+list while
+list precedence
+graph display ops
+graph display ops->top
+graph display ops->top->data
+graph display curr
+graph display curr->data
+graph display ops
+graph display ops->top
+graph display NULL
+quit
+run input.txt 
+graph display ops
+graph display ops->top
+graph display ops->top->data
+quit
+break parser.y:306
+run input.txt 
+graph display main
+graph display roots
+graph display *(roots[0]) dependent on 2
+graph display *(roots[1]) dependent on 2
+graph display *(roots[2]) dependent on 2
+graph display trees
+graph undisplay 2
+graph undisplay 3 4 5
+graph display *(trees[0]) dependent on 6
+graph display *((trees[0])->root) dependent on 7
+graph display *(((trees[0])->root)->next) dependent on 9
+graph display *((((trees[0])->root)->next)->right) dependent on 10
+graph display *(((((trees[0])->root)->next)->right)->right) dependent on 11
+graph display *((((((trees[0])->root)->next)->right)->right)->op) dependent on 12
+graph disable display 6
+graph enable display 6
+graph display *(trees[2]) dependent on 6
+graph display *((trees[2])->root) dependent on 14
+graph display *(((trees[2])->root)->next) dependent on 16
+graph display *((((trees[2])->root)->next)->left) dependent on 17
+graph display *((((trees[2])->root)->next)->right) dependent on 17
+quit
+run input.txt 
+quit
+run -ir input.txt 
+graph display que
+quit
+break parser.y:423
+run -ir input.txt 
+graph display roots
+graph display *(roots[0]) dependent on 1
+graph display stack
+graph display *(stack[0]) dependent on 3
+graph display *((stack[0])->top) dependent on 4
+graph display *(((stack[0])->top)->next) dependent on 5
+graph display *(stack[1]) dependent on 3
+quit
+break parser.y:425
+run -ir input.txt 
+graph display stack
+graph display *(stack[100]) dependent on 1
+graph display stack
+print stack->last
+graph undisplay 4
+graph display *(stack[0]) dependent on 1
+graph display *((stack[0])->last) dependent on 5
+graph display *((stack[0])->top) dependent on 5
+graph display *(((stack[0])->last)->prev) dependent on 7
+graph display *((((stack[0])->last)->prev)->prev) dependent on 9
+graph display *(((((stack[0])->last)->prev)->prev)->prev) dependent on 10
+graph display *((((((stack[0])->last)->prev)->prev)->prev)->prev) dependent on 11
+graph undisplay 8 12 13 14
+graph display *((((((stack[0])->last)->prev)->prev)->prev)->prev) dependent on 11
+graph display *(stack[1]) dependent on 1
+graph display *((stack[1])->last) dependent on 16
+graph display *(((stack[1])->last)->prev) dependent on 17
+graph display *((((stack[1])->last)->prev)->prev) dependent on 18
+graph display *(((((stack[1])->last)->prev)->prev)->prev) dependent on 19
+graph display *((((((stack[1])->last)->prev)->prev)->prev)->prev) dependent on 20
+graph display *(((((((stack[1])->last)->prev)->prev)->prev)->prev)->prev) dependent on 21
+list createTree
+graph display que
+run
+run -ir input.txt 
+graph display roots
+graph display *(roots[0]) dependent on 23
+quit
+break parser.y:424
+break parser.y:426
+delete 1
+run
+run -ir input.txt 
+graph display roots
+graph display *(roots[47]) dependent on 1
+graph display *(roots[48]) dependent on 1
+graph display *(roots[0]) dependent on 1
+graph display *(roots[50]) dependent on 1
+graph display *(roots[68]) dependent on 1
+graph display *(roots[74]) dependent on 1
+graph disable display 1
+graph enable display 1
+graph display *(roots[99]) dependent on 1
+graph display *(roots[98]) dependent on 1
+graph display *(roots[95]) dependent on 1
+graph display stack
+graph display *(stack[0]) dependent on 12
+quit
+break parser.y:426
+run -ir input.txt 
+graph display trees
+graph display *(trees[0]) dependent on 1
+graph display *(trees[1]) dependent on 1
+graph disable display 1
+graph enable display 1
+graph disable display 1
+graph enable display 1
+graph display *(trees[6]) dependent on 1
+graph display *(trees[99]) dependent on 1
+quit
+break parser.y:425
+run -ir input.txt 
+graph display trees
+graph display *(trees[0]) dependent on 1
+graph display *((trees[0])->root) dependent on 2
+graph display *(trees[1]) dependent on 1
+graph display *(trees[2]) dependent on 1
+quit
+run -ir input.txt 
+graph display root
+list 'roots'
+graph display roots
+graph display *(roots[0]) dependent on 2
+graph display *((roots[0])->left) dependent on 3
+graph display *((roots[0])->right) dependent on 3
+graph display *(((roots[0])->right)->right) dependent on 5
+graph display *((((roots[0])->right)->right)->next) dependent on 6
+graph display *((roots[0])->right) dependent on 3
+graph display *((roots[0])->left) dependent on 3
+quit
+run -ir input.txt 
+break parser.y:427
+run -ir input.txt 
+graph display roots
+graph display *(roots[1]) dependent on 1
+graph display *((roots[1])->left) dependent on 2
+graph display *((roots[1])->right) dependent on 2
+graph display *((roots[1])->next) dependent on 2
+graph display *(((roots[1])->next)->next) dependent on 5
+graph display *(roots[2]) dependent on 1
+graph display *(roots[5]) dependent on 1
+graph undisplay 2
+graph undisplay 1 3 4 5 7 8
+graph display roots
+graph display *(roots[6]) dependent on 9
+graph display *((roots[6])->left) dependent on 10
+graph display *((roots[6])->right) dependent on 10
+graph undisplay 10
+graph undisplay 12
+graph undisplay 11
+graph display *(roots[8]) dependent on 9
+graph display *((roots[8])->next) dependent on 13
+graph display *(roots[2]) dependent on 9
+graph display *((roots[2])->next) dependent on 15
+graph display *((roots[2])->left) dependent on 15
+graph display *((roots[2])->right) dependent on 15
+graph disable display 9
+graph enable display 9
+graph display *(roots[16]) dependent on 9
+graph undisplay 9
+graph display roots
+graph display *(roots[18]) dependent on 23
+graph display *(roots[24]) dependent on 23
+graph display *((roots[24])->left) dependent on 25
+graph display *((roots[24])->right) dependent on 25
+graph display *(roots[2]) dependent on 23
+graph undisplay 13
+graph undisplay 15 28
+graph undisplay 16 17 18 23 24 25 26 27
+graph undisplay 14
+graph undisplay 6
+graph display roots
+graph display *(roots[0]) dependent on 29
+graph display *(roots[1]) dependent on 29
+graph display *((roots[1])->left) dependent on 31
+graph display *((roots[1])->right) dependent on 31
+graph display *(((roots[1])->left)->next) dependent on 32
+graph display *(((roots[1])->right)->next) dependent on 33
+graph display *((roots[1])->next) dependent on 31
+graph display *(roots[3]) dependent on 29
+graph display *((roots[3])->next) dependent on 37
+graph undisplay 31
+graph display *((roots[3])->left) dependent on 37
+graph display *((roots[3])->right) dependent on 37
+graph display *(((roots[3])->left)->right) dependent on 39
+graph display *(((roots[3])->left)->left) dependent on 39
+graph display *(roots[1]) dependent on 29
+graph display *((roots[1])->next) dependent on 44
+graph display *((roots[1])->left) dependent on 44
+graph undisplay 29
+graph undisplay 30 37 44
+graph undisplay 32 33 34 35 36 38 39 40 45 46
+graph undisplay 41 42 43
+graph display roots
+graph display *(roots[1]) dependent on 47
+graph display *((roots[1])->next) dependent on 48
+graph display *(((roots[1])->next)->next) dependent on 49
+graph display *((roots[1])->left) dependent on 48
+graph display *((roots[1])->right) dependent on 48
+quit
+break parser.y:426
+run -ir input.txt 
+quit
+break parser.y:426
+run -ir input.txt 
+p roots
+p stack
+quit
+break parser.y:426
+run -ir input.txt 
+graph display node
+quit
+
